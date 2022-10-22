@@ -17,11 +17,11 @@ use Illuminate\Support\Facades\Route;
 //     return 'Olá, seja bem-vindo ao curso!';
 // });
 
-Route::get('/', 'PrincipalController@principal');
+Route::get('/', 'PrincipalController@principal')->name('site.index');
 
-Route::get('/sobre-nos', 'SobreNosController@sobreNos');
+Route::get('/sobre-nos', 'SobreNosController@sobreNos')->name('site.sobrenos');
 
-Route::get('/contato', 'ContatoController@contato');
+Route::get('/contato', 'ContatoController@contato')->name('site.contato');
 
 Route::get('/login', function () {
     return 'Login';
@@ -30,13 +30,13 @@ Route::get('/login', function () {
 Route::prefix('/app')->group(function () {
     Route::get('/clientes', function () {
         return 'Clientes';
-    });
+    })->name('app.login');
 
     Route::get('/fornecedores', function () {
         return 'Fornecedores';
-    });
+    })->name('app.fornecedores');
 
     Route::get('/produtos', function () {
         return 'Produtos';
-    });
+    })->name('app.produtos');
 });
