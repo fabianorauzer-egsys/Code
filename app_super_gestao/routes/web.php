@@ -25,12 +25,12 @@ Route::get('/contato', 'ContatoController@contato')->name('site.contato');
 
 Route::get('/login', function () {
     return 'Login';
-});
+})->name('app.login');
 
 Route::prefix('/app')->group(function () {
     Route::get('/clientes', function () {
         return 'Clientes';
-    })->name('app.login');
+    })->name('app.clientes');
 
     Route::get('/fornecedores', function () {
         return 'Fornecedores';
