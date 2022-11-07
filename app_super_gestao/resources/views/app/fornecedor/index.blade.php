@@ -9,8 +9,8 @@
     <br />
     Status: {{ $fornecedores[0]['status'] }}
     <br />
-    CNPJ: {{ $fornecedores[0]['CNPJ'] }}
-    @empty($fornecedores[0]['CNPJ'])
+    CNPJ: {{ $fornecedores[0]['cnpj'] }}
+    @empty($fornecedores[0]['cnpj'])
         - Vazio
     @endempty
     <br />
@@ -19,9 +19,9 @@
     <br />
     Status: {{ $fornecedores[1]['status'] }}
     <br />
-    @isset($fornecedores[1]['CNPJ'])
-        CNPJ: {{ $fornecedores[1]['CNPJ'] }}
-        @empty($fornecedores[0]['CNPJ'])
+    @isset($fornecedores[1]['cnpj'])
+        CNPJ: {{ $fornecedores[1]['cnpj'] }}
+        @empty($fornecedores[0]['cnpj'])
             - Vazio
         @endempty
     @endisset
