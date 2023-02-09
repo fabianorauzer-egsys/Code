@@ -12,7 +12,7 @@
         <br />
         Status: {{ $fornecedores[$i]['status'] }}
         <br />
-        CNPJ: {{ $fornecedores[$i]['cnpj'] ?? 'Dado não foi preenchido'}}
+        CNPJ: {{ $fornecedores[$i]['cnpj'] ?? 'Dados não foram preenchidos'}}
         <br />
         Telefone: {{ $fornecedores[$i]['ddd'] ?? ''}} {{ $fornecedores[$i]['telefone'] ?? ''}}
         <hr>
