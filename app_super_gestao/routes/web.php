@@ -39,6 +39,7 @@ Route::prefix('/app')->group(function () {
     })->name('app.produtos');
 });
 
+//rever
 Route::get('/teste/{p1}/{p2}', 'TesteController@teste')->name('teste');
 
 Route::fallback(function() {
