@@ -23,4 +23,11 @@ class Fornecedor extends Model
     // caso eu quisesse buscar mais de um registro, eu passaria um array de parametros, exemplo:
     // $fornecedores = Fornecedor::find([1,2]); 
 
+    //Recuperar registros do banco com where();
+    // >>> use \App\SiteContato;
+    // >>> $contatos = SiteContato::where('nome_coluna', 'operador_comparacao', 'valor')->get();
+    // $contatos = SiteContato::where('id', '>', 1)->get();  onde o ID for maior do que 1
+    // $contatos = SiteContato::where('nome', '<>', 'Maria')->get();   onde for diferente de Maria
+    // $contatos = SiteContato::where('nome', 'Maria')->get();   Passando apenas dois parametros, vai fazer a buscar por IGUAL. ex: onde nome for igual a Maria
+    // $contatos = SiteContato::where('mensagem', 'like', '%detalhes%')->get(); Vai buscar na coluna mensagem onde houver a palavra detalhes
 }
