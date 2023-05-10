@@ -21,7 +21,7 @@ class Fornecedor extends Model
     // $fornecedores = Fornecedor::find(2); 
     // o find busca pela primary key da tabela, que nesse caso é o id. Estou buscando o registro com id 2.
     // caso eu quisesse buscar mais de um registro, eu passaria um array de parametros, exemplo:
-    // $fornecedores = Fornecedor::find([1,2]); 
+    // $fornecedores = Fornecedor::find([1,2]);  
 
     //Recuperar registros do banco com where();
     // >>> use \App\SiteContato;
